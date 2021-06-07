@@ -5,6 +5,13 @@ This is a project template, including some nice things to conduct research, such
 * loggbook over research
 * report writing in jupyter notebook with conversion to LaTeX report.
 
+Suggested setup:
+------------
+* Define the LaTeX for the report as a git submodule in: [report_latex](reports/report_latex).
+* Edit the notebook metadata in: [01.1.report.ipynb](reports/report/01.1.report.ipynb)
+  * Author name
+  * report title
+
 Project Organization
 ------------
 
@@ -22,13 +29,16 @@ Project Organization
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    │   |                     the creator's initials, and a short `-` delimited description, e.g.
+    │   |                     `1.0-jqp-initial-data-exploration`.
+    │   └── [logbook.ipynb](notebooks/logbook.ipynb)        <- Logbook notebook
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
+    |   └── report
+    |       └── [01.1.report.ipynb](reports/report/01.1.report.ipynb) <- Report notebook
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
