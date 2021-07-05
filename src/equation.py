@@ -2,13 +2,13 @@ from IPython.display import Math
 from sympy.physics.vector.printing import vpprint, vlatex
 import sympy as sp
 import numpy as np
-from rolldecayestimators import symbols
-from rolldecayestimators import equations
+from src import symbols
+from src import equations
 
 equation_dict = dict()
 class Equation(Math):
         
-    def __init__(self,data:sp.Eq,label:str, url=None, filename=None, metadata=None, max_length=150, subs=True):
+    def __init__(self,data:sp.Eq,label='equation', url=None, filename=None, metadata=None, max_length=150, subs=True):
         """[summary]
 
         Args:
